@@ -1,0 +1,122 @@
+@media (max-width: 768px) {
+    .container {
+        display: block;  /* Cambia a layout vertical */
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .left, .right {
+        flex: none;  /* Elimina el comportamiento de flex en columnas */
+        width: 100%;  /* Ocupa todo el ancho de la pantalla */
+        margin-bottom: 2rem;
+    }
+
+    .ficha {
+        max-width: 100%; /* Asegura que la ficha ocupe el 100% del ancho disponible */
+    }
+
+    h2.trav {
+        padding-left: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    p.trav {
+        padding-left: 1rem;
+    }
+
+    .perfil {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .perfil-info {
+        flex-direction: column;  /* Coloca los elementos de perfil en columna */
+        align-items: flex-start;
+    }
+
+    .perfil-info ul {
+        padding-left: 0;
+        font-size: 0.9rem;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    h1, h2 {
+        padding-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .dis, .arq {
+        padding-left: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .galeria1, .galeria2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .prof img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .prof p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .column {
+        padding: 0.8rem;
+    }
+    .image-column img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .left, .right {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    .perfil-info {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .perfil {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .columnas {
+        column-count: 1; /* Una columna en pantallas pequeñas */
+    }
+}

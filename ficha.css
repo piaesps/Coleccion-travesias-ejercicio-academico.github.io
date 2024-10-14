@@ -1,0 +1,412 @@
+body { 
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFCF3;
+}
+
+.volver { 
+    background-color: transparent; /* Sin fondo para que solo se vea la imagen */
+    border: none; /* Sin borde */
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;  /* Posición desde la parte inferior */
+    left: 1rem;   /* Posición desde el lado derecho */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    opacity: 0.9;
+}
+.volver img.icon {
+    width: 2rem; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+}
+
+.volver:hover {
+    transform: translateY(-2px);
+    opacity: 1;
+}
+
+.volver:active {
+    transform: translateY(2px);
+}
+
+.titulo {
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0); 
+    flex-direction: column;
+    font-size: 2rem;
+    z-index: 1; /* Para asegurarse de que el texto esté por encima del pseudo-elemento */
+}
+
+.titulo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/croquis2.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1; /* Ajusta este valor para controlar la opacidad (0 es completamente transparente, 1 es opaco) */
+    z-index: -1; /* Para que el pseudo-elemento quede detrás del texto */
+}
+
+
+.container {
+    display: flex;
+    margin-top: 0.5rem; 
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.left, .right {
+    flex: 1;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 3s ease-out, transform 3s ease-out; /* Transición más lenta */
+}
+
+.left.show, .right.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.left {
+    background-color: #FFFCF3;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.ficha {
+    max-width: 500px;
+    width: 100%;
+}
+
+h2.trav{
+    padding-left: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+p.trav{
+    padding-left: 3rem;
+    margin-top: 0.1rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.perfil-info {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 1.5rem; 
+}
+
+.perfil {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.perfil-info ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+li.gran {
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+li.peq {
+    font-size: small;
+    font-style: italic;
+    padding-left: 0.5rem;
+}
+
+.ficha p {
+    margin-bottom: 0;
+}
+
+.indice {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 3s ease-out, transform 3s ease-out; /* Transición más lenta */
+}
+.indice img{
+    display: block;  /* Make the image a block element */
+    margin: 0 auto;  /* Center it horizontally */
+    max-width: 80%; /* Make it responsive */
+    height: auto;
+}
+
+
+.indice.show {
+    opacity: 1; /* Se vuelve visible */
+    transform: translateY(0); /* Vuelve a su posición original */
+}
+
+.indice h1 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.indice a {
+    font-size: 1.3rem;
+    display: block; /* Esto hace que los enlaces se comporten como bloques y cada uno aparezca en una línea nueva */
+    margin-bottom: 1rem;
+    text-decoration: none; /* Quitar el subrayado de los enlaces */
+    color: #1a253b;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.indice a:hover {
+    color: #6f122f; /* Cambia el color al pasar el ratón por encima */
+}
+
+.right {
+    background-color: #FFFCF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin-top: 4rem;
+}
+
+.intro{ 
+    padding: 1rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 3s ease-out, transform 3s ease-out; /* Transición más lenta */
+}
+.intro.show {
+    opacity: 1; /* Se vuelve visible */
+    transform: translateY(0); /* Vuelve a su posición original */
+}
+
+.intro p{
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.cuerpo {
+    margin: 0 auto;
+    padding: 1rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+.row h1{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-justify: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 3s ease-out, transform 3s ease-out;
+    gap: 2rem;
+}
+
+.rowtit {
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 0rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 3s ease-out, transform 3s ease-out; /* Transición más lenta */
+}
+
+.row.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.rowtit.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.column {
+    flex: 1;
+
+}
+
+.text-column h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.text-column p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.image-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.audio-button {
+    top: 0;
+    width: 50px;
+    height: 50px;
+    margin-left: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.audio-button img {
+    width: 4rem; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.audio-button:hover img {
+    transform: scale(1.1); /* Aumenta un poco el tamaño de la imagen al pasar el ratón */
+}
+.audio-controls {
+    display: none;
+    margin-top: -3rem;
+    margin-left: 5rem;
+    width: 200px;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* Estilos para la barra de progreso */
+#seekBar {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Estilos para los tiempos de audio */
+#currentTime, #duration {
+    font-size: 12px;
+    color: #6f122f;
+}
+.speed-control {
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente el control */
+}
+
+.speed-control label {
+    margin-right: 5px; /* Espacio entre la etiqueta y el menú desplegable */
+}
+
+.speed-control select {
+    margin-left: 5.5rem;
+    margin-top: -2rem;
+    font-size: 0.8rem;
+    background-color: #FFFCF3;
+    border-radius: 5px;
+    border-color: #6f122f;
+    color: #6f122f;
+}
+
+
+footer {
+    color: #6f122f;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 2rempx;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #6f122f;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.footer-bottom img {
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.footer-bottom a {
+    color: #6f122f;
+    text-decoration: underline;
+}

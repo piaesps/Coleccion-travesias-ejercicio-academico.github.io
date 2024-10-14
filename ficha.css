@@ -16,7 +16,7 @@ body {
     opacity: 0.9;
 }
 .volver img.icon {
-    width: 2rem; /* Ajusta el tamaño de la imagen según tus necesidades */
+    width: 4rem; /* Ajusta el tamaño de la imagen según tus necesidades */
     height: auto;
 }
 
@@ -190,6 +190,7 @@ li.peq {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Necesario para que la lupa se posicione sobre la imagen */
 }
 
 .right img {
@@ -198,6 +199,25 @@ li.peq {
     object-fit: cover;
     margin-top: 4rem;
 }
+
+/* Estilo para la lupa */
+#lupa {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    width: 100px; /* Ancho de la lupa */
+    height: 100px; /* Alto de la lupa */
+    overflow: hidden;
+    cursor: none; /* Ocultar el cursor al pasar sobre la lupa */
+    display: none; /* Inicialmente oculta */
+    pointer-events: none; /* Para que la lupa no interfiera con el mouse */
+}
+
+/* Mostrar la lupa solo al hacer hover sobre la imagen */
+.right:hover #lupa {
+    display: block; /* Mostrar la lupa al pasar el ratón sobre el contenedor */
+}
+
 
 .intro{ 
     padding: 1rem;
@@ -351,60 +371,16 @@ footer {
     color: #6f122f;
     padding: 20px 0;
     text-align: center;
-    margin-top: 2rempx;
+    margin-top: 2px;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-.footer-section {
-    flex: 1;
-    margin: 0 10px;
-}
-
-.footer-section h3 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    padding-bottom: 10px;
-}
-
-.footer-section p,
-.footer-section ul {
-    font-size: 1rem;
-}
-
-.footer-section ul {
-    list-style-type: none;
-}
-
-.footer-section ul li {
-    margin: 10px 0;
-}
-
-.footer-section ul li a {
-    text-decoration: none;
-    color: #6f122f;
-}
-
-.footer-section ul li a:hover {
-    text-decoration: underline;
-}
 
 .footer-bottom {
-    padding: 10px 0;
     font-size: 0.9rem;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-.footer-bottom img {
-    margin: 10px;
-    vertical-align: middle;
-}
+
 
 .footer-bottom a {
     color: #6f122f;

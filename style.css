@@ -19,11 +19,11 @@ h1 {
 
 .dis {
     color:#6f122f;
-    padding-left: 5rem;
+    padding-left: 5%;
 }
 .arq {
     color:#1a253b;
-    padding-left: 5rem;
+    padding-left: 5%;
 }
 
 .galeria1 {
@@ -53,8 +53,8 @@ h1 {
     cursor: pointer;
     transition: transform 0.3s ease;
     position: relative;
-    width: 15rem;  /* Definir el ancho del botón */
-    height: 15rem; /* Definir el alto del botón */
+    width: 15%;  /* Definir el ancho del botón */
+    height: 15%; /* Definir el alto del botón */
     display: flex;
     justify-content: center; /* Centrar verticalmente */
     align-items: center; /* Centrar horizontalmente */
@@ -73,7 +73,8 @@ h1 {
     object-fit: cover;
 }
 .prof:hover img {
-    filter: blur(0.5px);
+    filter: blur(2px);
+    background-color: #FFFCF3;
 }
 
 .prof p {
@@ -87,6 +88,7 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
+    text-shadow: 2px 2px 4px #FFFCF3;
 }
 
 .prof:hover p {

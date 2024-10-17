@@ -99,9 +99,11 @@
     <div class="intro">
         <h1 id="intro">Introducción</h1>
         <p>Desde 1984, la Escuela ha llevado a cabo una tradición anual, que combina la poesía con la obra. Cada año, tanto profesores como estudiantes se embarcan en viajes poéticos que tienen como objetivo fortalecer y profundizar la conexión entre la palabra y el oficio arquitectónico y de diseño. Estos viajes no solo se limitan a lo conocido y familiar, sino que se extienden a lo largo del continente latinoamericano, aventurándose en territorios inexplorados. Al adentrarse en lo desconocido, se busca abrir nuevas perspectivas y descubrir aquello que es nuevo e inusual.
+
             Esta colección busca recolectar y documentar las vivencias y los elementos inesperados, capturando el lado anecdótico que emerge de cada travesía. A través de relatos personales, reflexiones y croquis extraídos de las bitácoras del viaje.
-            Se invita al lector a sumergirse y descubrir las lecciones y las historias que han florecido en cada rincón visitado. En un mundo cada vez más interconectado, estas travesías nos recuerdan que la arquitectura y el diseño tienen el poder de transformar no solo el paisaje, sino también las vidas de quienes los habitan.
-            </p>
+           
+           <br> Se invita al lector a sumergirse y descubrir las lecciones y las historias que han florecido en cada rincón visitado. En un mundo cada vez más interconectado, estas travesías nos recuerdan que la arquitectura y el diseño tienen el poder de transformar no solo el paisaje, sino también las vidas de quienes los habitan.
+        </p>
 
     </div>
 
@@ -115,28 +117,27 @@
             </div>
             <div class="column text-column">
                 <h2>Antes de comenzar cualquier travesía, siempre hay un momento de preparación, conocido como la “pré-travesía”. ¿Cómo describiría ese proceso inicial y qué aspectos considera que son esenciales al momento de planificar este viaje?¿Cómo ha influido la participación de los alumnos en la organización? </h2>
-                <button class="audio-button" id="audioButton">
-                    <img id="audioIcon" src="img/play.png" alt="Play" />
-                   </button>
-                   <div class="audio-controls" id="audioControls">
-                       <div class="progress-container">
-                           <input type="range" id="seekBar" value="0" max="100">
-                           <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-                       </div>
-               
-                       <div class="speed-control">
-                           <label for="speedControl"></label>
-                           <select id="speedControl">
-                               <option value="0.5">0.5x</option>
-                               <option value="1" selected>1x (Normal)</option>
-                               <option value="1.5">1.5x</option>
-                               <option value="2">2x</option>
-                           </select>
-                       </div>
-                   </div>
-           
-                   <audio id="audio" src="img/audioprueba.mp3" preload="auto"></audio>
-                
+                <div class="audio-container" data-audio-id="1">
+                    <button class="audio-button">
+                        <img class="audioIcon" src="img/play.png" alt="Play" />
+                    </button>
+                    <div class="audio-controls">
+                        <div class="progress-container">
+                            <input type="range" class="seekBar" value="0" max="100">
+                            <span class="currentTime">0:00</span> / <span class="duration">0:00</span>
+                        </div>
+                        <div class="speed-control">
+                            <label for="speedControl"></label>
+                            <select class="speedControl">
+                                <option value="0.5">0.5x</option>
+                                <option value="1" selected>1x (Normal)</option>
+                                <option value="1.5">1.5x</option>
+                                <option value="2">2x</option>
+                            </select>
+                        </div>
+                    </div>
+                    <audio class="audio" src="syl/pregunta1.mp3" preload="auto"></audio>
+                </div>
                 <p>Ya mira, hay 2 cosas que en los inicios, la verdad que ha cambiado respecto a lo que se hace ahora. En los inicios, yo creo que la estrategia de la travesía es la que nos llevaba mucho tiempo, era planificar la parte, digamos, que era de cómo llegar al lugar, qué se llevaba, qué se comía, porque se iba por tierra, y se llegaba a lugares que no había nada. Entonces ahí había que tener mucha planificación respecto a ese aspecto, al contrario de hoy en día, que muchas veces se llega a un lugar ya más consolidado con infraestructura que te recibe o bien hostales, ya? Eso yo creo que ha sido un gran cambio. Ahora, lo que no ha cambiado y que a lo mejor antes era evidentemente más notorio, era que las primeras travesías en el proceso inicial había mucha fundamentación de lo que se iba a realizar, mucha, o sea, habían muchas reuniones de de previos a la travesía para darle el sentido de la travesía. Muchas conversaciones de los profesores para ver por qué se elegía y cuál era el motivo de elegir tales destinos o tales otros. En eso yo creo que de alguna manera el tiempo que ha pasado te lleva a que, realmente no puede definir eso, a lo mejor con mayor rapidez. No con tanto tiempo dedicado a eso, ah, de conversación y reuniones. Y definitivamente la estrategia es la que era cambiante en esos momentos.
                     Desde el primer momento yo creo que me tocó participar en la primera travesía y los alumnos son fundamentales, o sea, sin ellos es imposible pensar que podríamos hacer lo que vamos a hacer. Porque hay que pensar que nosotros, yo he tenido la oportunidad de hacer travesías entre solo profesores o que han participado algunos integrantes de la ciudad abierta, una que se hizo a Nueva York, por ejemplo, esa era sin alumno, y se pudo hacer sin ningún problema, o sea porque ya tenemos la experiencia de estas otras, pero para realizarlas acá, de la manera que se ha querido hacer que sea una experiencia para los alumnos, son súper importantes porque con ellos se arman los grupos de trabajo y de gestión que se necesitan para la realización. 
                     Y además, ojo, no se podrían levantar las obras que se levantan sin ellos. Porque ellos, además de la mano de obra, que es fundamental, son también… particularizan e individualizan, ciertas terminaciones, ciertos rasgos esenciales también en la obra. Lo cual es una experiencia tanto para los profesores como para ellos.    
@@ -146,28 +147,27 @@
         <div class="row">
             <div class="column text-column">
                 <h2>El enfoque de cada unos de estos viajes se decide cada año dependiendo de diversas circunstancias ¿Alguna vez han partido un viaje sin saber qué hacer?</h2>
-                <button class="audio-button" id="audioButton">
-                    <img id="audioIcon" src="img/play.png" alt="Play" />
-                   </button>
-                   <div class="audio-controls" id="audioControls">
-                       <div class="progress-container">
-                           <input type="range" id="seekBar" value="0" max="100">
-                           <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-                       </div>
-               
-                       <div class="speed-control">
-                           <label for="speedControl"></label>
-                           <select id="speedControl">
-                               <option value="0.5">0.5x</option>
-                               <option value="1" selected>1x (Normal)</option>
-                               <option value="1.5">1.5x</option>
-                               <option value="2">2x</option>
-                           </select>
-                       </div>
-                   </div>
-           
-                   <audio id="audio" src="img/audioprueba.mp3" preload="auto"></audio>
-                
+                <div class="audio-container" data-audio-id="2">
+                    <button class="audio-button">
+                        <img class="audioIcon" src="img/play.png" alt="Play" />
+                    </button>
+                    <div class="audio-controls">
+                        <div class="progress-container">
+                            <input type="range" class="seekBar" value="0" max="100">
+                            <span class="currentTime">0:00</span> / <span class="duration">1:34</span>
+                        </div>
+                        <div class="speed-control">
+                            <label for="speedControl"></label>
+                            <select class="speedControl">
+                                <option value="0.5">0.5x</option>
+                                <option value="1" selected>1x (Normal)</option>
+                                <option value="1.5">1.5x</option>
+                                <option value="2">2x</option>
+                            </select>
+                        </div>
+                    </div>
+                    <audio class="audio" src="syl/pregunta2.mp3" preload="auto"></audio>
+                </div>
                 <p>La verdad…sí, o sea, el sin saber qué hacer, claro, o sea, se ha ido porque era el recorrido lo que más interesaba. Entonces en ese sentido, ahora se entendió como que la travesía tiene que tener una obra. Ah, pero en las primeras que realizamos, la primera que realicé yo y que fue la primera también, que se realizó en la escuela que fue al desierto. Había una obra, pero lo esencial era… y una segunda en la misma ocasión, lo esencial era. ¿Cómo se levantaba, qué se hacía con la cantidad de alumnos? eran alumnos de título con alumnos de primer año, y se organizó de tal manera de que se trabajara con lo que había en el lugar. Entonces anteriormente se fue a ese lugar, los profesores, algunos fueron al lugar y se eligieron incluso los materiales. En el desierto había un lugar donde había piedra liparita y se sacaba la piedra del lugar y se trabajaba esa, que es como una piedra muy liviana, muy, muy liviana. Entonces en ese sentido estaba el cálculo del material y de lo que se podría llegar a ser como ahora, pero en esa misma ocasión, ese mismo grupo fuimos solamente titulantes con los profesores hacia Córdoba y hacia Buenos Aires, y ahí no había nada planificado excepto los lugares, observar y mirar y hacer los recorridos necesarios, no había obra, eso es lo que quiero decir que esa sería lo distinto en cuanto a el no saber qué hacer. Bueno, el que son se entiende aquí que no es no saber qué hacer. No significa que es porque no se hace obra, sino que es precisamente de estudio. 
                 </p>
             </div>
@@ -185,27 +185,27 @@
             <div class="column text-column">
                 <h2>En la ruta, los planes y lo planeado suelen cambiar. ¿Es más relevante para ti llegar o es igual de importante aprovechar este trayecto?
                 </h2>
-                <button class="audio-button" id="audioButton">
-                    <img id="audioIcon" src="img/play.png" alt="Play" />
-                   </button>
-                   <div class="audio-controls" id="audioControls">
-                       <div class="progress-container">
-                           <input type="range" id="seekBar" value="0" max="100">
-                           <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-                       </div>
-               
-                       <div class="speed-control">
-                           <label for="speedControl"></label>
-                           <select id="speedControl">
-                               <option value="0.5">0.5x</option>
-                               <option value="1" selected>1x (Normal)</option>
-                               <option value="1.5">1.5x</option>
-                               <option value="2">2x</option>
-                           </select>
-                       </div>
-                   </div>
-           
-                   <audio id="audio" src="img/audioprueba.mp3" preload="auto"></audio>
+                <div class="audio-container" data-audio-id="3">
+                    <button class="audio-button">
+                        <img class="audioIcon" src="img/play.png" alt="Play" />
+                    </button>
+                    <div class="audio-controls">
+                        <div class="progress-container">
+                            <input type="range" class="seekBar" value="0" max="100">
+                            <span class="currentTime">0:00</span> / <span class="duration">2:46</span>
+                        </div>
+                        <div class="speed-control">
+                            <label for="speedControl"></label>
+                            <select class="speedControl">
+                                <option value="0.5">0.5x</option>
+                                <option value="1" selected>1x (Normal)</option>
+                                <option value="1.5">1.5x</option>
+                                <option value="2">2x</option>
+                            </select>
+                        </div>
+                    </div>
+                    <audio class="audio" src="syl/pregunta3.mp3" preload="auto"></audio>
+                </div>
                 
                 <p>Hay una travesía que es la de Santa Cruz de la Sierra, creo que fue el 93, no me acuerdo, el 92 o 91 ya no me acuerdo. Fue una travesía, calculada más o menos con 4 días de recorrido. Desde acá se iba hasta Argentina se estaba una noche en Argentina y de ahí nos íbamos hacia arriba, que la otra noche hasta llegar a Santa cruz hacia arriba, digo hacia el norte sería hacia la parte norte por Argentina, pero ocurrió que esa travesía, en vez de demorar 3 días y medio, demoró 9 días, solo en bus. Entonces todo lo planificado fue en contra ¿por qué? porque los buses no eran buses adaptados para subir altura y tenían que andar en un promedio de 30 km/h. Eran muy bajos, no como los que se usan en esos lugares que es altiplano, que son bastante altos. Entonces todo lo planificado era multiplicarlo casi los tiempos por mucho menos, se tenía un promedio de 70 km/h y fue de 20 y 30 km/h, entonces eso implicó llegar a los al noveno día a Santa Cruz de la Sierra. Por tanto, todo eso fue coordinando con las comidas… se dormía en los buses. No se dormía, no se detenía para irse a algún lugar, se hacía el camino porque habían lugares donde el bus no alcanzaba a pasar y había que bajarse con palas para poder armar el camino que era necesario. También a veces el bus no reconocía a donde seguía la ruta porque a veces pasaba un río, porque había llovido, y cruzaba la ruta a un río y no sabía por dónde se seguía hasta que veías a que al otro lado del río, o riachuelo se podía ver que era la huella del camino. Todo esto estamos hablando de Bolivia. Entonces, claro, la travesía puede cambiar lo planeado. Se tenían calculado otras cosas, la obra de alguna manera se hizo en el momento y los finales fueron los que tenían que ser ya, pero sin duda hubo más tiempo que estar estar más tiempo acotado porque tuvo que gastar más. Una travesía se calcula a 20 días, 15 días a 10 días y tiene un cálculo para todos esos días, si te alargas 2, 3 días significan costos que a veces no están tan asumidos. Cuando son números grandes, siempre se tiene como un gran porcentaje de apoyo, verdad? Cuando son números chicos de integrantes en una travesía se tiene menos rango de de uso de la de los dineros. Hace hay menos caja, como se diría, hay menos fondos. Cuando son números mayores en este caso que les hablo la travesía a Santa Cruz en esos años, en los 90, éramos 2 buses, por tanto, éramos alrededor de 80 y tantas personas. 
                 </p>
@@ -214,28 +214,27 @@
         <div class="row">
             <div class="column text-column">
                 <h2>Siempre hay momentos de claridad y otros de incertidumbre. ¿Cómo se lidia con los altibajos en el transcurso de este viaje? ¿Alguna travesía te enseñó algo particularmente valioso en ese sentido?</h2>
-                <button class="audio-button" id="audioButton">
-                    <img id="audioIcon" src="img/play.png" alt="Play" />
-                   </button>
-                   <div class="audio-controls" id="audioControls">
-                       <div class="progress-container">
-                           <input type="range" id="seekBar" value="0" max="100">
-                           <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-                       </div>
-               
-                       <div class="speed-control">
-                           <label for="speedControl"></label>
-                           <select id="speedControl">
-                               <option value="0.5">0.5x</option>
-                               <option value="1" selected>1x (Normal)</option>
-                               <option value="1.5">1.5x</option>
-                               <option value="2">2x</option>
-                           </select>
-                       </div>
-                   </div>
-           
-                   <audio id="audio" src="img/audioprueba.mp3" preload="auto"></audio>
-                
+                <div class="audio-container" data-audio-id="4">
+                    <button class="audio-button">
+                        <img class="audioIcon" src="img/play.png" alt="Play" />
+                    </button>
+                    <div class="audio-controls">
+                        <div class="progress-container">
+                            <input type="range" class="seekBar" value="0" max="100">
+                            <span class="currentTime">0:00</span> / <span class="duration">0:00</span>
+                        </div>
+                        <div class="speed-control">
+                            <label for="speedControl"></label>
+                            <select class="speedControl">
+                                <option value="0.5">0.5x</option>
+                                <option value="1" selected>1x (Normal)</option>
+                                <option value="1.5">1.5x</option>
+                                <option value="2">2x</option>
+                            </select>
+                        </div>
+                    </div>
+                    <audio class="audio" src="syl/pregunta4.mp3" preload="auto"></audio>
+                </div>
                 <p>Si, mira, hay una, que es la travesía a Uruguay. Nosotros habíamos planificado acá el proyecto con Ricardo Lang, trabajábamos 2 talleres e hicimos alrededor de 7 travesías juntos los talleres de diseño gráfico y diseño industrial, que se estudian por separado, pero para el momento de travesía hacia un taller conjunto. Ese taller en conjunto pensaba la travesía entre los dos, porque sumamos en total un bus… Habitualmente éramos 36 alumnos y los 2 profesores, más o menos ese era el rango, no habían ayudantes en ese tiempo. Entonces ese era el rango con que se trabaja 36 alumnos, 2 profesores de uno y de otro taller, se hacía una obra común se hacía un taller común ¿Qué nos pasó?, se tenía la obra lista, se calculaba acá o más o menos lista había que ver dónde y cómo se instalaba, y resulta que cuando nosotros vamos en una travesía que era por varios lugares, ya por las 3 capitales, decíamos… Asunción, Buenos Aires y me falta una…¿cuál podría ser? Ah! y Montevideo. Y cuándo pasamos a Uruguay, en la aduana nos requisan toda la obra… porque era en maderas, que era unas cosas firmes y todo, eran casi como unas esculturas prácticamente, por cómo estaban hechas… unos macizos de madera, nos requisan todo porque exigían los permisos para poder ingresarla. Y nosotros pasábamos por ahí, pero entramos por el norte de Uruguay y teníamos calculado salir al sur, y después irnos a Buenos Aires y después a de nuevo a Argentina. El paso por Uruguay nos requisaron la obra y no teníamos… no podíamos pensar en devolvernos hasta el norte de Uruguay después a nuestro regreso para ir al lugar que íbamos que era Córdoba a retirar los materiales. 
                     Por tanto dijimos, bueno, empecemos de cero, en esa ocasión se empezó de cero, y lo único que nos quedaron fueron unas placas de vidrio que se ponían con los versos de San Francisco, porque íbamos a una ciudad que se llama San Francisco, en Argentina. ¿Entonces, qué hacíamos?, nos fuimos a Asunción, pasamos Uruguay por el norte, nos requisaron la obra allá y nosotros teníamos planificado ir a la capital que era Montevideo, Buenos Aires abajo y subir para hacer la obra acá arriba. Dejamos lo que había de obra ahí no se pudo volver a buscarla, se perdieron… Y tuvimos que asumirlo porque no podía ser, los alumnos no podían entender cómo habían trabajado tanto y perdíamos la hora, pero es que si no, nos íbamos a desgastar más en el recorrido y en tiempo que significaba llegar a Córdoba para hacer la obra. Lo que pasó fue lo siguiente, que en Córdoba se hizo una obra mucho mejor que lo que estaba planificado, en el sentido de más sensible, más… con más cuidados. Ah, que lo que se había planificado acá, que eres madera, se hizo una en lo posible de hacer que era más barato y todo, se hizo en fierro y se dio la coincidencia que conocimos a las personas que… conocimos en el lugar donde podíamos hacer como una maestranza, donde teníamos a los maestros, soldadores a uno, los alumnos trabajaban ahí en esa obra en la maestranza y teníamos además el encuentro con el que sería el alcalde y con alguien que nos ayudó a todas las comunicaciones con el alcalde por tanto conseguimos un lugar… nos ofrecían que se hiciera al lado de la catedral como era dedicada a San Francisco o en otro lugar que era jardín botánico y podía quedar cerrado, pero no era como el de acá, sino que era más bien un parque más bien urbano, bastante urbano. Hasta el día de hoy esa obra se mantiene, y lo ocuparon para todos los encuentros de poetas, y de artistas. Son una suerte de hitos, cierto de Fierro, que tienen arriba la lectura de San Francisco con vidrios, que nosotros, cada vez que pasamos con la travesía, los arreglamos y la pintamos.
                     
@@ -256,28 +255,27 @@
             </div>
             <div class="column text-column">
                 <h2>A veces el resultado es muy distinto a lo planeado, como comentabamos con anterioridad. ¿Te ha pasado que un final resultó mejor de lo que estabas esperando?</h2>
-                <button class="audio-button" id="audioButton">
-                    <img id="audioIcon" src="img/play.png" alt="Play" />
-                   </button>
-                   <div class="audio-controls" id="audioControls">
-                       <div class="progress-container">
-                           <input type="range" id="seekBar" value="0" max="100">
-                           <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-                       </div>
-               
-                       <div class="speed-control">
-                           <label for="speedControl"></label>
-                           <select id="speedControl">
-                               <option value="0.5">0.5x</option>
-                               <option value="1" selected>1x (Normal)</option>
-                               <option value="1.5">1.5x</option>
-                               <option value="2">2x</option>
-                           </select>
-                       </div>
-                   </div>
-           
-                   <audio id="audio" src="img/audioprueba.mp3" preload="auto"></audio>
-                
+                <div class="audio-container" data-audio-id="5">
+                    <button class="audio-button">
+                        <img class="audioIcon" src="img/play.png" alt="Play" />
+                    </button>
+                    <div class="audio-controls">
+                        <div class="progress-container">
+                            <input type="range" class="seekBar" value="0" max="100">
+                            <span class="currentTime">0:00</span> / <span class="duration">0:00</span>
+                        </div>
+                        <div class="speed-control">
+                            <label for="speedControl"></label>
+                            <select class="speedControl">
+                                <option value="0.5">0.5x</option>
+                                <option value="1" selected>1x (Normal)</option>
+                                <option value="1.5">1.5x</option>
+                                <option value="2">2x</option>
+                            </select>
+                        </div>
+                    </div>
+                    <audio class="audio" src="syl/pregunta5.mp3" preload="auto"></audio>
+                </div>
                 
                 <p>Yo creo que en general, como uno va con una orientación de lo que va a hacer, no tiene todo proyectado porque deja esa dinámica también a lo que va aconteciendo. Y como acontecen cosas con los materiales, con los lugares, con las personas, con el terreno mismo, con los suelos mismos, por ejemplo en ocasiones uno se encuentra con que tienes un suelo tienes que hacer las fundaciones y las fundaciones, resulta que tú haces el hoyo y abajo hay agua, entonces, no sabes cómo rellenar porque uno no se espera eso y tienes que empezar a planificar para levantar las verticales. ¿Entonces eso de que el final resultó mejor lo estaba esperando? Sin duda hay una que yo tengo muy bonitos recuerdos porque la hicimos con Salvador Zahr fue a Lago Verde y fue una travesía en que íbamos sólo diseñadores… en general, diseñadores gráficos y objetos ya estaba la ya estaba reunidos, invitamos a un arquitecto de la escuela, profesor que no estaba realizando ya ese año travesías que es Salvador Zahr, y que nos apoyó en poder hacer todas las fundaciones de lo que íbamos a hacer, porque teníamos calculado hacer una suerte de lugar, hito, para que pudiesen mirar y leer unos versos de Amereida. Todo lo planificado resultó muchísimo mejor porque él hizo unas grandes fundaciones, porque en el lugar se llenaba de nieve hasta los 70 cm. Entonces todo lo que se hizo, obviamente, a través de su mirada más de la arquitectura y de la estructura Salvador, era genial en eso, en estructura, sin duda manifiesta, digamos que calculado, a lo mejor hubiera quedado más leve, como lo del se robustece iba a permanecer en el tiempo. Y también es una cosa muy especial, fue la última travesía que hizo Salvador y 2 años después él fallece, el 2020. Entonces ese año, que hicimos el 2017, que era la travesía de la cual fue invitado, fue su última travesía también, y con alumnos de diseño, lo cual era muy significativo, porque él tenía que enseñarle a esos alumnos de diseño muchas cosas. De los ayudantes que hay ahora que participaron de esa travesía algunos. Entonces yo creo que fue muy significativa por la experiencia tanto con él, y la experiencia de lo que hicimos, porque resultó también todo muy bien con el apoyo de un ex alumnos que vivían en Coyhaique, que nos compraron todas las cosas que nosotros les encargamos para la comida, nos tenían la camioneta cargada, y nosotros llegábamos a coyhaique y nos veníamos hacia lago Verde, con todas las compras ya hechas, lo cual no hubiera significado un día más en Coyhaique. ¿Ya entonces? Sin duda hay muchas cosas que resultan mejor de lo esperado por estos apoyos y estas logísticas de que hay de es salud. Y de ex alumnos que han realizado travesía. De hecho, el lugar fue elegido porque había un alumno allá que no hizo todos los contactos con el alcalde para poder tener un pequeño bus que nos ayudan. Puede tener un lugar que hubo que equiparlo para poder un colegio antiguo para poder llegar. Eso es más de lo esperado.
                 </p>
@@ -286,27 +284,27 @@
         <div class="row">
             <div class="column text-column">
                 <h2>¿Rescatas algo de cada una de tus experiencias en estos viajes o hay alguna travesía que consideres como la más memorable?</h2>
-                <button class="audio-button" id="audioButton">
-                    <img id="audioIcon" src="img/play.png" alt="Play" />
-                   </button>
-                   <div class="audio-controls" id="audioControls">
-                       <div class="progress-container">
-                           <input type="range" id="seekBar" value="0" max="100">
-                           <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-                       </div>
-               
-                       <div class="speed-control">
-                           <label for="speedControl"></label>
-                           <select id="speedControl">
-                               <option value="0.5">0.5x</option>
-                               <option value="1" selected>1x (Normal)</option>
-                               <option value="1.5">1.5x</option>
-                               <option value="2">2x</option>
-                           </select>
-                       </div>
-                   </div>
-           
-                   <audio id="audio" src="img/audioprueba.mp3" preload="auto"></audio>
+                <div class="audio-container" data-audio-id="6">
+                    <button class="audio-button">
+                        <img class="audioIcon" src="img/play.png" alt="Play" />
+                    </button>
+                    <div class="audio-controls">
+                        <div class="progress-container">
+                            <input type="range" class="seekBar" value="0" max="100">
+                            <span class="currentTime">0:00</span> / <span class="duration">0:00</span>
+                        </div>
+                        <div class="speed-control">
+                            <label for="speedControl"></label>
+                            <select class="speedControl">
+                                <option value="0.5">0.5x</option>
+                                <option value="1" selected>1x (Normal)</option>
+                                <option value="1.5">1.5x</option>
+                                <option value="2">2x</option>
+                            </select>
+                        </div>
+                    </div>
+                    <audio class="audio" src="syl/pregunta6.mp3" preload="auto"></audio>
+                </div>
                 
                
                 <p>Bueno, esta que les contaba recién, por lo que les contaba, pero si yo me pongo a pensar, todas tienen algo de memorable, o sea, para mí, las más memorables, sin duda, fueron con los profesores fundadores, que me tocó ir a varias con ellos y participar en varias con ellos. Godofredo Iommi nunca fue, pero sí participaba de las reuniones de las travesías… sobre todo la que fue la serena, esa él estuvo pendiente de cuál era la orientación que debía haber en esa travesía y nos reunimos durante un mes, como unos 9 o 10 profesores, en el departamento de él, nos íbamos prácticamente día por medio a reuniones que duran unas 2 horas, 3 horas en que se explicaba el sentido de la travesía y cómo se iba pensando… en esto ir pensándola, ¿ya? Eso fue durante un mes, me acuerdo perfecto. Entonces esa es memorable en ese sentido cierto, o las que hacíamos con Alberto Cruz, cierto en que eran todos los recorridos en todo momento habían clases, o sea, él detenía el bus a las 7:00 de la mañana y se hacía una clase en la pampa… o a cualquier hora del día no había esto de que están durmiendo en el bus, no existía ¿me entiende? podía existir, pero tenían que levantarse todo en el momento que se pedía que se detuviera el bus para hacer una clase, para hacer una observación él de ese instante o ese momento del amanecer por ejemplo, eso ocurría habitualmente en todas las travesías con los profesores fundadores… eran de un rigor, yo creo, mucho más, diría de épico en el sentido no de esfuerzo, hay otras travesías que son con mucho esfuerzo, que la épica se va por por la contingencia de todo lo que va ocurriendo. En las de ellos era estar en permanente estudio y eso se daba porque habían clases todo el tiempo como a su vez, Claudio Girola, hacía actos o le gustaba llevar siempre cine, buen cine, no en para verlo en el bus, no había para verlo en el bus pero sí se encargaba de llevar televisiones o una al menos, para que todos viera en algún momento de la noche cine que él considera que debía ser visto, crear el ámbito, de ahí viene el término ámbito de las de las travesías. Entonces esas sin duda, para mí las primeras son memorables por eso cierto, las que me tocaron a mí y a otros le habrán tocado otras, la de Copiapó, no había nada, lo que les contaba, nada no había nada era solo desierto. Y un cálculo que no se sabía cuánto comprar de comida porque no había ningún antecedente de cuánto se consumía normalmente en una travesía… no hubo cálculo del viento que hacía… no hubo cálculo de que los fuegos de las cocinas eran unas cocinillas de camping y no unos fuegos grandes que se hubieran necesitado porque da a la altura, hay menos oxígeno, por tanto, hay menos energía y funciona más lento todo y en esas travesías se cocinaba solamente en la noche, o sea desde la mañana hasta la noche cocinando para que estuviera cocinado lo que comíamos en la noche, en el día eran unos sándwich y unas frutas. Entonces, de que son memorables por una u otra cosa, sí. </p>
@@ -327,28 +325,27 @@
             </div>
             <div class="column text-column">
                 <h2>Las travesías han existido por más de 40 años ¿Cuál crees que es la principal diferencia  entre las travesías nuevas y las antiguas?</h2>
-                <button class="audio-button" id="audioButton">
-                    <img id="audioIcon" src="img/play.png" alt="Play" />
-                   </button>
-                   <div class="audio-controls" id="audioControls">
-                       <div class="progress-container">
-                           <input type="range" id="seekBar" value="0" max="100">
-                           <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-                       </div>
-               
-                       <div class="speed-control">
-                           <label for="speedControl"></label>
-                           <select id="speedControl">
-                               <option value="0.5">0.5x</option>
-                               <option value="1" selected>1x (Normal)</option>
-                               <option value="1.5">1.5x</option>
-                               <option value="2">2x</option>
-                           </select>
-                       </div>
-                   </div>
-           
-                   <audio id="audio" src="img/audioprueba.mp3" preload="auto"></audio>
-                
+                <div class="audio-container" data-audio-id="7">
+                    <button class="audio-button">
+                        <img class="audioIcon" src="img/play.png" alt="Play" />
+                    </button>
+                    <div class="audio-controls">
+                        <div class="progress-container">
+                            <input type="range" class="seekBar" value="0" max="100">
+                            <span class="currentTime">0:00</span> / <span class="duration">0:00</span>
+                        </div>
+                        <div class="speed-control">
+                            <label for="speedControl"></label>
+                            <select class="speedControl">
+                                <option value="0.5">0.5x</option>
+                                <option value="1" selected>1x (Normal)</option>
+                                <option value="1.5">1.5x</option>
+                                <option value="2">2x</option>
+                            </select>
+                        </div>
+                    </div>
+                    <audio class="audio" src="syl/pregunta7.mp3" preload="auto"></audio>
+                </div>
                 
                 <p>Sin duda, la logística, yo creo que en eso lo acumulado también la logística te permite adelantarte a situaciones, y también al cálculo. Antes no se pensaba cómo se piensa ahora, que hay una parte económica que mide todo. Antes se decía, podíamos ir a Santa Cruz de la Sierra, o arriba a Brasil al norte de Brasil. En cambio, ahora que hace uno, ve el cálculo que decimos nosotros del compás, ah, que es poner Valparaíso como centro, hasta dónde nos lleva el compás con cálculo de kilómetros para saber si eso va a ser posible ser pagado. Entonces eso ya cambió radicalmente, entonces lo posible realizar, antes no había esa necesidad de pensar cuánto costaba, la verdad que lo importante era ver hacia dónde se iba y después se solucionaba, y se buscaban la manera de solucionarlo, pero ahora sin duda, porque el mundo cambió, se calcula mucho la parte económica. Porque uno las hace con el estudiante y los tiempos han cambiado. La otra cosa es la seguridad, sin duda la seguridad ha cambiado también, gracias a muchas cosas, y ojalá no cambie todavía, nunca ha habido un gran accidente ni nada que que permita que que, o sea, haga pensar y repensar, ha sido todo en una cosa… nosotros siempre decimos, San Francisco de Asís nos asiste en las travesías, porque en realidad habido casos en que han habido fracturas, han habido accidentes mayores individuales  siempre y en grupo que ha nacido a veces atacados por abejas, por ejemplo, porque entraron al recintos que no correspondían, o de algunos bichos que te pican en lugares tropicales, pero en general todo bastante bastante posible de sobrellevar ya. En ese sentido, te digo, en los más de 40 años las diferencias son que la logística es muy distinta, ahora se calcula mucho más… Nunca habían habido hasta los años 90, las 10 primeras nunca se había pensado en hacer una en avión hasta el año 95-96 que se hizo la primera en avión y que fuimos todos de diseño en avión, todo diseño, o sea se caía ese avión y siempre decíamos “este avión se cae, no hay más diseñadores en la escuela” porque iba todo diseño y el único taller que se quedaba era el que estaba en Huinay. Es que uno no piensa esas cosas, pero la piensas y lo haces como broma, cierto, decíamos “oye aquí vamos todo diseño, profesores y alumnos.” Y quedó solo un taller que fue a Huinay que era por Boric Ivelic con su ayudante quizá, y sus 25 alumnos, eso era todo lo que había de diseño y todo diseño se había ido hacia Quito. Entonces, esas cosas, por ejemplo, con respecto a la seguridad, al desglose, antes no es que no estuviéramos calculando porque uno vaya en avión, cierto, pero son cálculos que uno tiene que fueron las primeras travesías que eran en avión. Hubo otras que yo no participé y que fueron. ¿Cómo se llama? en barco, ¿no cierto? que se fue en barco a cierta a ciertos lugares. Y otras que son por tierra. Entonces la logística, principalmente, yo creo que eso es lo que ha cambiado. Pero de alguna manera también, yo diría, la actitud y la travesía respecto de las generaciones, las generaciones cambian, entonces uno tenía una actitud distinta en las primeras en que todo estaba como a la aventura, a las que están ahora en que ya la generación también ha cambiado las primeras, muchos no habían viajado a ningún lado, ahora todos viajan.
                     En cambio, yo diría, las primeras generaciones eran épicas, lo que se llama épica. O sea, el esfuerzo por hacerla, en el viaje estar dibujando constantemente, o sea, no cabía no estar dibujando. Las primeras eran sin fotografía, eran sólo dibujos, no se permitían cámaras fotográficas, por eso hay muy poco registro, también porque la insistencia en el dibujo permaneció durante muchos años en las travesías porque era la tradición de la escuela. Incluso las bitácoras de travesía de los que estaban a cargo de ruta y las enteras dibujadas con mapas para indicar al chofer las rutas, porque no había un Wase que te indicará, entonces había que saberse muy bien el territorio, por tanto, había un conocimiento y una orientación del territorio mucho mayor, obviamente, de los que estaban a cargo de esa parte ¿ya?, o sea porque los que no estaban a cargo tampoco se orientaban tanto, pero los que sí estaban a cargo había una orientación mucho mayor que ahora yo creo que es más superficial.
@@ -358,28 +355,27 @@
         <div class="row">
             <div class="column text-column">
                 <h2>¿Hay algo del pasado que te gustaría que siguiera existiendo en las travesías actuales?</h2>
-                <button class="audio-button" id="audioButton">
-                    <img id="audioIcon" src="img/play.png" alt="Play" />
-                   </button>
-                   <div class="audio-controls" id="audioControls">
-                       <div class="progress-container">
-                           <input type="range" id="seekBar" value="0" max="100">
-                           <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-                       </div>
-               
-                       <div class="speed-control">
-                           <label for="speedControl"></label>
-                           <select id="speedControl">
-                               <option value="0.5">0.5x</option>
-                               <option value="1" selected>1x (Normal)</option>
-                               <option value="1.5">1.5x</option>
-                               <option value="2">2x</option>
-                           </select>
-                       </div>
-                   </div>
-           
-                   <audio id="audio" src="img/audioprueba.mp3" preload="auto"></audio>
-                
+                <div class="audio-container" data-audio-id="8">
+                    <button class="audio-button">
+                        <img class="audioIcon" src="img/play.png" alt="Play" />
+                    </button>
+                    <div class="audio-controls">
+                        <div class="progress-container">
+                            <input type="range" class="seekBar" value="0" max="100">
+                            <span class="currentTime">0:00</span> / <span class="duration">0:00</span>
+                        </div>
+                        <div class="speed-control">
+                            <label for="speedControl"></label>
+                            <select class="speedControl">
+                                <option value="0.5">0.5x</option>
+                                <option value="1" selected>1x (Normal)</option>
+                                <option value="1.5">1.5x</option>
+                                <option value="2">2x</option>
+                            </select>
+                        </div>
+                    </div>
+                    <audio class="audio" src="syl/pregunta8.mp3" preload="auto"></audio>
+                </div>
                 
                 <p>O sea, yo lo he dicho en muchas ocasiones que el cálculo poético y esa cosa por lo desconocido o esa cosa que atrae, que es porque uno le ve un distingo a la travesía que hace en esa ocasión es lo que permite que sigan existiendo. O sea, no creo que no pase algo. O sea, a lo mejor lo que puede pasar es que a veces hay muchas cosas con mucha cosa ya concertada de lo que se va a hacer y menos de lo que podría haber el cambio de hacer algo. Porque antes jamás hacíamos convenio con nadie, no teníamos trato con ninguna municipalidad, todos iban siendo en el momento ya no este “no es que necesitan y requieren de tal cosa… Necesitan un recinto, necesitan esto…”, eso no estaba, no había programa establecido. Ahora yo creo que puede ocurrirle a algunos, no a todos, que a veces se dan, pero dentro del concierto de la travesía de la escuela habrán 2 o 3 que son así y 5 que no son así. Entonces uno si piensa, la verdad, está todo bastante equilibrado, siguen existiendo más o menos las mismas dinámicas, y por eso se van pudiendo repetir. Si hay profesores nuevos, que es lo que ocurre con profesores que están llegando, es bueno que trabajen con un profesor que ya lleva en el cuerpo varias travesías, para pensar y para poder sustentar esas mismas dinámicas, cierto, porque si no empiezan esas dinámicas que eran fuertes, no que empiezan a prevalecer unas de otras, sin duda sí, pero para que sigan con el mismo espíritu quizá, y para que uno ve que siguen todo el tiempo un mismo curso, una misma intención, un mismo qué hacer afán. Sí ha cambiado que… Algo que ha pasado y que te gustaría que siga existiendo es que existan ¿ya?, y que vayan los alumnos, porque sin alumnos no tiene mucho sentido. ¿Cierto?, no… Sería una obra de unos pocos… Sería una cosa muy académica que la podrían realizar algunos no podríamos haber pensado cambios ¿ah?, por esto de que no se sientan obligados. Pero uno también… Uno podría ir con los que quieren ir o ¿con quiénes? con los que académicamente se sabe que van a obtener, y no tienen inconvenientes de que siente esto… Y la economía, sin duda, es una de las cosas que topa mucho el no poder ir.
                     Principalmente esa aventura  por lo que no se sabe qué va a ocurrir, el cálculo poético yo creo que sin duda siempre debe estar presente, porque si es una escuela que se funda en un texto que abre puertas justamente a un América que queremos conocer, debiese mantenerse… Y de la manera que lo interprete cada cual, no hay una cosa obligada en eso. Pero que cada disciplina pueda hacerse las preguntas, cada vez que sale, por algo que de alguna manera se entiende no va a ser nunca realizable en el día a día.

@@ -293,18 +293,59 @@ li.peq {
 
 .audio-controls {
     display: none;
-    margin-top: -3rem;
-    margin-left: 5rem;
+    margin-top: -5rem;
+    margin-left: 18rem;
     width: 200px;
     background-color: transparent;
     padding: 5px;
     border-radius: 8px;
 }
 
-#seekBar {
+/* Estilo de la barra de progreso */
+.seekBar {
+    -webkit-appearance: none; /* Quitar el estilo predeterminado en Chrome/Safari */
     width: 100%;
+    height: 10px; /* Altura de la barra */
+    background: #ddd; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Quitar el borde de enfoque */
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
+
+/* Cambiar el color de la barra de progreso cuando el usuario la selecciona */
+.seekBar::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Quitar el estilo predeterminado en Chrome/Safari */
+    width: 20px; /* Tamaño del deslizador */
+    height: 20px;
+    background-color: #6f122f; /* Color del deslizador */
+    border-radius: 50%; /* Deslizador redondo */
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra del deslizador */
+    transition: background 0.3s ease-in-out;
+}
+
+.seekBar::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #6f122f;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo cuando el botón de progreso se mueve */
+.seekBar:active::-webkit-slider-thumb {
+    background-color: #d81b60; /* Cambiar el color del deslizador al arrastrar */
+}
+
+/* Cambiar el color de la barra cuando se ajusta el progreso */
+.seekBar::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #6f122f, #d81b60); /* Gradiente de color de progreso */
+    border-radius: 5px;
+    height: 10px;
+}
+
 
 #currentTime, #duration {
     font-size: 12px;

@@ -1,22 +1,30 @@
-body { 
-    font-family: Poppins, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FFFCF3;
+/* Asegura que el box-sizing se aplique a todos los elementos */
+* {
+    box-sizing: border-box;
 }
 
+body { 
+    font-family: Poppins, sans-serif;
+    padding: 0; /* Eliminado padding */
+    background-color: #FFFCF3;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+
+}
+
+/* Estilo del botón volver */
 .volver { 
-    background-color: transparent; /* Sin fondo para que solo se vea la imagen */
-    border: none; /* Sin borde */
+    background-color: transparent; 
+    border: none; 
     cursor: pointer;
     position: fixed;
-    top: 1rem;  /* Posición desde la parte inferior */
-    left: 1rem;   /* Posición desde el lado derecho */
-    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
     opacity: 0.9;
 }
+
 .volver img.icon {
-    width: 4rem; /* Ajusta el tamaño de la imagen según tus necesidades */
+    width: 4rem;
     height: auto;
 }
 
@@ -29,47 +37,22 @@ body {
     transform: translateY(2px);
 }
 
-.titulo {
-    position: relative;
-    height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: rgb(0, 0, 0); 
-    flex-direction: column;
-    font-size: 2rem;
-    z-index: 1; /* Para asegurarse de que el texto esté por encima del pseudo-elemento */
-}
-
-.titulo::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('img/croquis4.png'); /* Reemplaza con la ruta de tu imagen */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.1; /* Ajusta este valor para controlar la opacidad (0 es completamente transparente, 1 es opaco) */
-    z-index: -1; /* Para que el pseudo-elemento quede detrás del texto */
-}
-
-
+/* Contenedor principal */
 .container {
     display: flex;
-    margin-top: 0.5rem; 
-    margin-left: 15%;
-    margin-right: 15%;
+    flex-direction: column; /* Cambiado a columna para apilar verticalmente */
+    margin-left: 12%;
+    margin-right: 12%;
+    padding: 0; /* Eliminado padding */
+    max-width: 100%;
+    overflow: hidden; /* Evitar el scroll en el contenedor */
 }
 
+/* Sección izquierda y derecha */
 .left, .right {
-    flex: 1;
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 3s ease-out, transform 3s ease-out; /* Transición más lenta */
+    transition: opacity 3s ease-out, transform 3s ease-out; 
 }
 
 .left.show, .right.show {
@@ -77,35 +60,37 @@ body {
     transform: translateY(0);
 }
 
+/* Fondo de las secciones */
 .left {
     background-color: #FFFCF3;
     display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: flex-start; /* Asegura que los elementos se alineen al inicio */
 }
 
 .ficha {
     max-width: 500px;
-    width: 100%;
+
 }
 
-h2.trav{
+h2.trav {
     padding-left: 2rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
     margin-bottom: 0.5rem;
 }
 
-p.trav{
+p.trav {
     padding-left: 3rem;
     margin-top: 0.1rem;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 300;
 }
 
+/* Información del perfil */
 .perfil-info {
     display: flex; 
     align-items: center;
-    margin-bottom: 1.5rem; 
+    margin-bottom: 0rem; 
 }
 
 .perfil {
@@ -138,119 +123,94 @@ li.peq {
     margin-bottom: 0;
 }
 
+/* Índice */
 .indice {
-    margin-left: 15%;
-    margin-right: 15%;
     margin-top: 10%;
-    margin-bottom: 5%;
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 3s ease-out, transform 3s ease-out; /* Transición más lenta */
+    transition: opacity 3s ease-out, transform 3s ease-out;
 }
-.indice img{
-    display: block;  /* Make the image a block element */
-    margin: 0 auto;  /* Center it horizontally */
-    max-width: 80%; /* Make it responsive */
+
+.indice img {
+    display: block; 
+    margin-top: 8%;
+    margin-bottom: 8%;
+    opacity: 0.8; 
+    max-width: 100%;
     height: auto;
 }
 
-
 .indice.show {
-    opacity: 1; /* Se vuelve visible */
-    transform: translateY(0); /* Vuelve a su posición original */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .indice h1 {
     margin-top: 1rem;
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    white-space: nowrap;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
 .indice a {
     font-size: 1.3rem;
-    display: block; /* Esto hace que los enlaces se comporten como bloques y cada uno aparezca en una línea nueva */
+    display: block; 
     margin-bottom: 1rem;
-    text-decoration: none; /* Quitar el subrayado de los enlaces */
+    text-decoration: none;
     color: #1a253b;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
 .indice a:hover {
-    color: #6f122f; /* Cambia el color al pasar el ratón por encima */
+    color: #6f122f;
 }
 
+/* Estilo del lado derecho */
 .right {
     background-color: #FFFCF3;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Necesario para que la lupa se posicione sobre la imagen */
+    position: relative;
 }
 
 .right img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    margin-top: 4rem;
+    margin-top: 0rem;
 }
 
-/* Estilo para la lupa */
-#lupa {
-    position: absolute;
-    border: 3px solid #000;
-    border-radius: 50%;
-    width: 100px; /* Ancho de la lupa */
-    height: 100px; /* Alto de la lupa */
-    overflow: hidden;
-    cursor: none; /* Ocultar el cursor al pasar sobre la lupa */
-    display: none; /* Inicialmente oculta */
-    pointer-events: none; /* Para que la lupa no interfiera con el mouse */
-}
-
-/* Mostrar la lupa solo al hacer hover sobre la imagen */
-.right:hover #lupa {
-    display: block; /* Mostrar la lupa al pasar el ratón sobre el contenedor */
-}
-
-
-.intro{ 
+/* Introducción */
+.intro { 
     padding: 1rem;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 5%;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 3s ease-out, transform 3s ease-out; /* Transición más lenta */
-}
-.intro.show {
-    opacity: 1; /* Se vuelve visible */
-    transform: translateY(0); /* Vuelve a su posición original */
+    transition: opacity 3s ease-out, transform 3s ease-out; 
 }
 
-.intro p{
+.intro.show {
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+.intro p {
     column-count: 2;
     column-gap: 2rem;
+    margin-top: 5%;
 }
 
+/* Cuerpo principal */
 .cuerpo {
-    margin: 0 auto;
     padding: 1rem;
-    margin-left: 15%;
-    margin-right: 15%;
-    
+    max-width: 100%;
 }
 
-.row h1{
+.row h1 {
     margin-top: 5%;
     margin-bottom: 3%;
-    text-justify: center;
+    text-align: center;
 }
 
 .row {
@@ -265,18 +225,19 @@ li.peq {
 }
 
 .rowtit {
-    flex-direction: column; /* Apila los elementos verticalmente */
-    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column;
+    align-items: center; 
     margin-bottom: 0rem;
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 3s ease-out, transform 3s ease-out; /* Transición más lenta */
+    transition: opacity 3s ease-out, transform 3s ease-out; 
 }
 
 .row.show {
     opacity: 1;
     transform: translateY(0);
 }
+
 .rowtit.show {
     opacity: 1;
     transform: translateY(0);
@@ -284,18 +245,18 @@ li.peq {
 
 .column {
     flex: 1;
-
 }
 
 .text-column h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
 .text-column p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.4;
     font-style: italic;
+    margin-top: 1rem;
 }
 
 .image-column img {
@@ -303,11 +264,14 @@ li.peq {
     height: auto;
 }
 
+/* Botón de audio */
 .audio-button {
     top: 0;
     width: 50px;
     height: 50px;
-    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 13rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -318,14 +282,15 @@ li.peq {
 }
 
 .audio-button img {
-    width: 4rem; /* Ajusta el tamaño de la imagen según tus necesidades */
-    height: auto; /* Mantiene la proporción de la imagen */
-    transition: transform 0.3s; /* Transición suave al hacer hover */
+    width: 4rem; 
+    height: auto;
+    transition: transform 0.3s;
 }
 
 .audio-button:hover img {
-    transform: scale(1.1); /* Aumenta un poco el tamaño de la imagen al pasar el ratón */
+    transform: scale(1.1);
 }
+
 .audio-controls {
     display: none;
     margin-top: -3rem;
@@ -336,24 +301,23 @@ li.peq {
     border-radius: 8px;
 }
 
-/* Estilos para la barra de progreso */
 #seekBar {
     width: 100%;
     cursor: pointer;
 }
 
-/* Estilos para los tiempos de audio */
 #currentTime, #duration {
     font-size: 12px;
     color: #6f122f;
 }
+
 .speed-control {
-    display: flex; /* Usa flexbox para alinear elementos */
-    align-items: center; /* Centra verticalmente el control */
+    display: flex;
+    align-items: center; 
 }
 
 .speed-control label {
-    margin-right: 5px; /* Espacio entre la etiqueta y el menú desplegable */
+    margin-right: 5px;
 }
 
 .speed-control select {
@@ -366,7 +330,7 @@ li.peq {
     color: #6f122f;
 }
 
-
+/* Estilo del pie de página */
 footer {
     color: #6f122f;
     padding: 20px 0;
@@ -374,13 +338,10 @@ footer {
     margin-top: 2px;
 }
 
-
 .footer-bottom {
     font-size: 0.9rem;
     margin-top: 5px;
 }
-
-
 
 .footer-bottom a {
     color: #6f122f;
